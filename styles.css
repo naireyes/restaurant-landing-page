@@ -1,0 +1,60 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Header */
+.header {
+    background-image: url(./assets/restaurant-scene.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    color: white;
+    width: 400px;
+    justify-content: space-around;
+    align-items: baseline;
+
+}
+
+/* Welcome */
+
+.welcome {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: white;
+}
+
+.welcome button {
+    padding: 10px 20px;
+    color: green;
+    border: 1px solid green;
+    margin: 30px auto;
+
+}
+
+
+/* Food */
+
+.food-images {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 2%;
+    width: 100vw;
+
+}
+
+.food-info {}
+
+.food-images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
