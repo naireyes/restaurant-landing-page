@@ -2,42 +2,100 @@ body {
     width: 100vw;
     height: 100vh;
     margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    color: #6B7174;
 }
+
+h3 {
+    color: #5E8EAB;
+    font-weight: bolder;
+}
+
 
 /* Header */
 .header {
-    background-image: url(./assets/restaurant-scene.jpg);
+    background-image: url(./assets/restaurant-scene2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
+
+}
+
+.header nav {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    top: 600px;
+    width: 100vw;
+    float: right;
+}
+
+nav h1 {
+    font-size: 2.6rem;
+    padding-right: 600px;
+
 }
 
 nav ul {
     list-style: none;
     display: flex;
     color: white;
-    width: 400px;
+    width: 100vw;
     justify-content: space-around;
     align-items: baseline;
+    padding-right: 100px;
+}
 
+nav li {
+    font-weight: bolder;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+nav li:nth-child(2) {
+    text-decoration: underline;
 }
 
 /* Welcome */
 
 .welcome {
-    width: 400px;
+    width: 600px;
     margin: 40px auto;
     text-align: center;
     background-color: white;
 }
 
-.welcome button {
-    padding: 10px 20px;
-    color: green;
-    border: 1px solid green;
-    margin: 30px auto;
+.welcome h1 {
+    color: black;
+}
 
+.welcome button {
+    padding: 10px 30px;
+    color: #2F956D;
+    border: 1px solid #2F956D;
+    margin: 30px auto;
+    background-color: transparent;
+
+}
+
+
+
+.welcome__buttons {
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+}
+
+button:first-child {
+    background-color: #2F956D;
+    color: white;
+}
+
+.welcome p {
+    line-height: 30px;
 }
 
 
@@ -46,15 +104,70 @@ nav ul {
 .food-images {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-left: 2%;
-    width: 100vw;
+    margin-left: 50px;
+    width: 90w;
 
 }
 
-.food-info {}
+.food-info p {
+    width: 300px;
+    font-size: .8rem;
+    line-height: 25px;
+}
 
 .food-images img {
-    width: 300px;
+    width: 310px;
+    height: 310px;
+    object-fit: cover;
+}
+
+.food-images span {
+    color: #2F956D;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Bottom Section */
+
+.bottom-section {
+    display: flex;
+    margin-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+}
+
+.bottom-section div:first-child {
+    margin-right: 30px;
+}
+
+.bottom-section img {
+    width: 650px;
     height: 300px;
     object-fit: cover;
+}
+
+.bottom__message p {
+    width: 600px;
+    line-height: 30px;
+}
+
+.bottom__message h3 {
+    margin-top: 0;
+}
+
+.bottom__message button {
+    float: right;
+    margin-top: 60px;
+    padding: 10px 25px;
+    color: gray;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding-bottom: 1rem;
 }
