@@ -7,7 +7,7 @@ Link: https://templatemo.com/tm-539-simple-house
 html
 css
 
-##Acknowledgement
+## Acknowledgement
 Templatemo for the landing page template
 Unsplash for the images
 
