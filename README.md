@@ -8,8 +8,7 @@ html
 css
 
 ## Acknowledgement
-Templatemo for the landing page template
-Unsplash for the images
+Templatemo for the landing page template and Unsplash for the images
 
 Photo by Shawn Ang on Unsplash - restaurant scene image
 Photo by Anna Tukhfatullina Food Photographer/Stylist on Unsplash - slice of cake
