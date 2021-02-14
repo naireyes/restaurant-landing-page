@@ -6,6 +6,7 @@ Link: https://templatemo.com/tm-539-simple-house
 ## Technologies Used
 * html
 * css
+* javascript
 
 ## Acknowledgement
 Templatemo for the landing page template and Unsplash for the images
