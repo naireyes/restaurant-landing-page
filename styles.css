@@ -28,14 +28,14 @@ h3 {
     display: flex;
     align-items: flex-end;
     position: relative;
-    top: 600px;
+    top: 75%;
     width: 100vw;
     float: right;
 }
 
 nav h1 {
     font-size: 2.6rem;
-    padding-right: 600px;
+    padding-right: 500px;
 
 }
 
@@ -63,18 +63,39 @@ nav li:nth-child(2) {
     text-decoration: underline;
 }
 
-.fa-bars {
+.fa-bars::before {
     display: none;
+    margin: 2rem 2rem;
+    color: white;
 }
 
 .mobile-menu {
     display: none;
+    background: white;
+    color: gray;
+    width: 10rem;
+    height: 9rem;
+    margin-left: 2%;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: gray;
+}
+
+.mobile-menu li {
+    padding-top: 1rem;
 }
 
 /* Welcome */
 
 .welcome {
-    width: 600px;
+    width: 60%;
     margin: 40px auto;
     text-align: center;
     background-color: white;
@@ -88,7 +109,7 @@ nav li:nth-child(2) {
     padding: 10px 30px;
     color: #2F956D;
     border: 1px solid #2F956D;
-    margin: 30px auto;
+    margin-top: 5%;
     background-color: transparent;
 
 }
@@ -97,9 +118,16 @@ nav li:nth-child(2) {
 
 .welcome__buttons {
     display: flex;
-    width: 400px;
-    margin: 0 auto;
+    justify-content: center;
+    width: 100%;
+
 }
+
+.welcome__buttons button {
+    margin-left: 2%;
+}
+
+
 
 button:first-child {
     background-color: #2F956D;
@@ -108,6 +136,7 @@ button:first-child {
 
 .welcome p {
     line-height: 30px;
+
 }
 
 
@@ -115,21 +144,23 @@ button:first-child {
 
 .food-images {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin-left: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2px;
     width: 90w;
+    justify-items: center;
+    margin-left: 3%;
 
 }
 
 .food-info p {
-    width: 300px;
+    width: 90%;
     font-size: .8rem;
     line-height: 25px;
 }
 
 .food-images img {
-    width: 310px;
-    height: 310px;
+    width: 92%;
+    height: 60%;
     object-fit: cover;
 }
 
@@ -139,382 +170,75 @@ button:first-child {
     font-weight: bold;
 }
 
-/* Bottom Section */
-
-.bottom-section {
-    display: flex;
-    margin-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-
-}
-
-.bottom-section div:first-child {
-    margin-right: 30px;
-}
-
-.bottom-section img {
-    width: 650px;
-    height: 300px;
-    object-fit: cover;
+.bottom__message {
+    margin-left: 3%;
+    width: 85%;
 }
 
 .bottom__message p {
-    width: 600px;
     line-height: 30px;
+}
+
+
+.bottom__message button {
+    float: right;
+    margin-top: 2%;
+    margin-right: 10%;
+    padding: 2%;
+    color: gray;
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.bottom-section {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    margin: 2%;
+    justify-items: center;
+
+}
+
+.bottom-section img {
+    width: 80%;
+    height: 70%;
+    object-fit: cover;
+    margin-left: 15%;
 }
 
 .bottom__message h3 {
     margin-top: 0;
 }
 
-.bottom__message button {
-    float: right;
-    margin-top: 60px;
-    padding: 10px 25px;
-    color: gray;
-    background-color: transparent;
-    border: 1px solid gray;
-}
-
 /* Footer */
 
 footer {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-top: 1%;
+    padding-bottom: 2%;
 }
 
-
-@media screen and (max-width: 1300px) {
-
+@media screen and (max-width: 1200px) {
     .header nav {
-        top: 430px;
+        display: none;
     }
 
-    .food-info img,
-    .food-info p {
-        width: 280px;
-    }
-
-    .bottom__message p {
-        width: 460px;
-    }
-}
-
-@media screen and (max-width: 1180px) {
-
-    .header nav {
-        top: 430px;
-
-    }
-
-    nav h1 {
-        padding-right: 400px;
-    }
-
-
-
-    .food-info img,
-    .food-info p {
-        width: 250px;
-    }
-
-    .bottom-section img {
-        width: 550px;
-    }
-
-    .bottom__message p {
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 1075px) {
-
-    .fa-bars {
+    .fa-bars::before {
         display: block;
     }
 
-    .header nav {
-        display: none;
-
+    .bottom__message img {
+        width: 60%;
+        height: 60%;
+        margin: 0 auto;
     }
 
-    nav h1 {
-        padding-right: 400px;
-    }
-
-
-
-    .food-info img,
-    .food-info p {
-        width: 220px;
-    }
-
-    .bottom-section img {
-        width: 500px;
-    }
-
-    .bottom__message p {
-        width: 450px;
-    }
-}
-
-@media screen and (max-width: 960px) {
-
-    .fa-bars {
-        display: block;
-    }
-
-    .header nav {
-        display: none;
-    }
-
-    nav h1 {
-        padding-right: 270px;
-    }
-
-    .food-info img,
-    .food-info p {
-        width: 200px;
-    }
-
-    .bottom-section img {
-        width: 450px;
-    }
-
-    .bottom__message p {
-        width: 390px;
-    }
-
-    .bottom__message button {
-        margin-top: 20px;
-    }
-}
-
-/* iPad */
-
-/* iPad Pro */
-@media screen and (max-width: 1024px) {
-
-    .header {
-        width: 100vw;
-    }
-
-    .header nav {
-        top: 1180px;
-    }
-
-    nav h1 {
-        padding-right: 100px;
-    }
-
-    nav a {
-        font-size: 1.3rem;
-    }
-
-
-    .welcome {
-        width: 400px;
-    }
-
-    .food-images {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 40px;
-    }
-
-    .food-info img {
-        width: 280px;
-        height: 280px;
-        justify-content: center;
-
+    .bottom__message {
+        width: 70%;
     }
 
     .bottom-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-left: 15%;
-    }
-
-    .bottom-section img,
-    .bottom__message p {
-        width: 700px;
-    }
-
-    .bottom__message button {
-        float: left;
-    }
-
-    .bottom__message h3 {
-        padding-top: 30px;
-    }
-
-    footer p {
-        font-size: .8rem;
-    }
-
-}
-
-/* iPad */
-@media screen and (max-width: 768px) {
-
-    .header nav {
-        top: 850px;
-    }
-
-    nav h1 {
-        padding-right: 100px;
-    }
-
-    nav a {
-        font-size: 1.3rem;
-    }
-
-
-    .welcome {
-        width: 400px;
-    }
-
-    .food-images {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        margin-left: 20px;
-    }
-
-    .food-info img {
-        width: 230px;
-        height: 230px;
-        justify-content: center;
-
-    }
-
-    .bottom-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-left: 20%;
-    }
-
-    .bottom-section img,
-    .bottom__message p {
-        width: 500px;
-    }
-
-    .bottom__message button {
-        float: left;
-    }
-
-    .bottom__message h3 {
-        padding-top: 30px;
-    }
-
-    footer p {
-        font-size: .8rem;
-    }
-
-}
-
-/* iPhone */
-
-@media screen and (max-width: 375px) {
-
-    .header nav {
-        display: none;
-    }
-
-    .header {
-        background-size: 500px;
-        height: 300px;
-    }
-
-    nav h1 {
-        padding-right: 100px;
-    }
-
-    nav a {
-        font-size: 1.3rem;
-    }
-
-    .welcome {
-        width: 300px;
-    }
-
-    .welcome__buttons {
-        display: flex;
-        justify-content: space-around;
-        width: 300px;
-        padding: 10px 15px
-    }
-
-    .food-images {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-left: 13%;
-    }
-
-    .food-info img {
-        width: 280px;
-        height: 280px;
-    }
-
-    .food-info p {
-        width: 280px;
-    }
-
-    .bottom-section {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        margin-left: 20%;
-    }
-
-    .bottom-section img,
-    .bottom__message p {
-        width: 250px;
-    }
-
-    .bottom__message button {
-        float: left;
-    }
-
-    .bottom__message h3 {
-        padding-top: 30px;
-    }
-
-    footer p {
-        font-size: .8rem;
-    }
-
-    .mobile-menu {
-        display: none;
-        height: 150px;
-        width: 130px;
-        background-color: rgba(255, 255, 255, 0.8);
-        color: black;
-        margin-top: 0;
-    }
-
-    .mobile-menu ul {
-        padding-top: 30px;
-    }
-
-    .mobile-menu li,
-    .mobile-menu a {
-        list-style: none;
-        text-decoration: none;
-        color: black;
-        padding-top: 5px;
-    }
-
-    .fa-bars {
-        display: block;
-        padding-top: 5%;
-        padding-left: 5%;
-        color: white;
+        margin-left: 0;
     }
 
 }
