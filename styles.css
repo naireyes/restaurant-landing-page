@@ -146,7 +146,7 @@ button:first-child {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 2px;
-    width: 90w;
+    width: 90vw;
     justify-items: center;
     margin-left: 3%;
 
@@ -160,7 +160,7 @@ button:first-child {
 
 .food-images img {
     width: 92%;
-    height: 60%;
+    height: 300px;
     object-fit: cover;
 }
 
@@ -228,8 +228,8 @@ footer {
     }
 
     .bottom__message img {
-        width: 60%;
-        height: 60%;
+        width: 50%;
+        height: 50%;
         margin: 0 auto;
     }
 
