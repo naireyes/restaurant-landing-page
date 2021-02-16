@@ -144,12 +144,11 @@ button:first-child {
 
 .food-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
     grid-gap: 2px;
-    width: 90vw;
-    justify-items: center;
-    margin-left: 3%;
-
+    width: 98%;
+    justify-items: space-around;
+    margin-left: 2.5%;
 }
 
 .food-info p {
@@ -171,7 +170,6 @@ button:first-child {
 }
 
 .bottom__message {
-    margin-left: 3%;
     width: 85%;
 }
 
@@ -192,18 +190,22 @@ button:first-child {
 
 .bottom-section {
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 5px;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    margin: 2%;
     justify-items: center;
+    margin: 3% auto;
+    width: 80%;
 
 }
 
+.bottom__img {
+    width: 85%;
+}
+
 .bottom-section img {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: 90%;
     object-fit: cover;
-    margin-left: 15%;
 }
 
 .bottom__message h3 {
@@ -227,18 +229,80 @@ footer {
         display: block;
     }
 
-    .bottom__message img {
-        width: 50%;
-        height: 50%;
-        margin: 0 auto;
-    }
-
     .bottom__message {
         width: 70%;
     }
 
-    .bottom-section {
-        margin-left: 0;
+    .bottom__img {
+        margin-left: 15%;
     }
 
+    .bottom__img img {
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width:1004px) {
+    .bottom__img {
+        width: 70%;
+        height: 70%;
+        margin: 0 auto;
+    }
+
+    .bottom__img img {
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .bottom__message {
+        margin-top: 2%;
+    }
+}
+
+@media screen and (max-width: 634px) {
+
+    .food-images {
+        margin-left: 5%;
+    }
+
+    .footer p {
+        font-size: 1px;
+
+    }
+
+    .bottom-section {
+        margin: 3% auto;
+    }
+
+    .bottom__img {
+        height: 100%;
+    }
+
+    .bottom__img img {
+        height: 100%;
+    }
+
+    .footer p {
+        margin-top: 10%;
+        font-size: 2%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .bottom__message p {
+        width: 80%;
+    }
+
+    .bottom__img {
+        height: 100%;
+    }
+
+    .bottom__img img {
+        width: 85%;
+        height: 100%;
+        margin: 0 auto;
+    }
 }
