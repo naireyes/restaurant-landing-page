@@ -63,10 +63,21 @@ nav li:nth-child(2) {
     text-decoration: underline;
 }
 
+.mobile__title {
+    display: flex;
+    align-items: center;
+}
+
 .fa-bars::before {
     display: none;
     margin: 2rem 2rem;
     color: white;
+}
+
+.mobile__title h1 {
+    display: none;
+    color: white;
+    font-size: 2.5rem;
 }
 
 .mobile-menu {
@@ -225,7 +236,8 @@ footer {
         display: none;
     }
 
-    .fa-bars::before {
+    .fa-bars::before,
+    .mobile__title h1 {
         display: block;
     }
 
